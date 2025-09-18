@@ -1,0 +1,101 @@
+body {
+    background-color: #5f04c7;
+    color: white;
+    margin: 0px;
+}
+
+header {
+    background-color: #00c0e2;
+    text-align: center;
+    letter-spacing: -8px;
+    word-spacing: 15px;
+    font-size: 36px;
+    color: rgb(54, 10, 83);
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+p, blockquote, ul {
+    font-family: "Bricolage Grotesque", sans-serif; /*google font 1*/
+    font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Barriecito", system-ui; /*google font 2*/
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    display: flex; /*5 NEW*/
+    justify-content: space-around; /*6 NEW*/
+    background-color: #faebd7;
+    padding: 1rem;
+}
+
+nav a {
+    color: #ff7300;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none; /* 1 NEW remove underline*/
+    font-weight: 600;
+    border-style: dashed; /*2 NEW*/
+    padding: 5px 15px 5px 15px;
+    border-width: 3px; /*3 NEW*/
+}
+
+nav a:hover {
+    background-color: #99fcff;
+    translate: 2px 2px; /*NEW*/
+}
+
+main {
+    padding: 2rem 0 2rem 0;
+    width: 75vw;
+    margin: auto;
+}
+
+main h2 {
+    font-size: 2.5em;
+}
+
+main h3 {
+    font-size: 1.8em;
+}
+
+main p {
+    padding: 1rem;
+    letter-spacing: .2px;
+}
+
+footer {
+    padding: 2rem 15rem 2rem 15rem;
+    background-color: #99fcff;
+    color: #360a53;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer ul {
+    text-transform: uppercase; /*new*/
+}
+
+/* 4. Control all image sizes using CSS */
+img {
+    border-radius: 50%; /*4 NEW*/
+    width: 300px;
+    height: 300px;
+}
