@@ -1,6 +1,148 @@
 body {
-
+    background-color: #082a48;
     margin: 0;
     padding: 0;
+
+    font-family: Eczar, serif;
+    font-size: 18px;
+
+    background-image: url("images/forest.jpeg");
+    background-size: 20rem;
+    background-attachment: fixed;
 }
 
+nav {
+    background-color: #2e4237;
+}
+
+nav a { 
+    color: #fff6d4;
+    font-size: 1.15rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-family: "Grenze Gotisch", serif;
+
+}
+
+nav a:hover {
+    background-color: #fff6d4;
+    color: #2e4237;
+}
+
+#wrapper {
+    width: 60vw;
+    background-color: #fff6d4de;
+    margin: 4rem auto;
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+blockquote {
+    font-size: 1rem;
+    background-color: #fff6d493;
+    padding: 1rem;
+    border-left: 5px solid #52562780;
+    font-style: italic;
+}
+
+#inner-quote {
+    background: none;
+    margin: 0;
+    padding: 1rem 1rem 0rem 2rem;
+    font-style: normal;
+}
+
+#grey {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* use them as many times as you like, use period */
+span.wow {
+    color: #9f0cde;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+span.purple {
+    font-style: italic;
+    color: #500066;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Grenze Gotisch", serif;
+    letter-spacing: 0rem;
+    font-weight: 800;
+    text-transform: lowercase;
+}
+
+main table {
+    border-style: solid;
+    background-color: #faebd7b8;
+    font-size: 1rem;
+    box-shadow: 0px 4px 10px rgba(1, 37, 20, 0.519);
+}
+
+/* table headers */
+main table th {
+    border-style: solid;
+    background-color: #3e5c4d;
+    color: #fff6d4;
+}
+
+/* table data */
+main table td {
+    padding: 0.5rem .5rem;
+}
+
+/* alternate colors even??? */
+main table tr:nth-child(odd) {
+    background-color: #2faa1f1e;
+}
+
+/* featured */
+
+.featured{
+    margin: 2.5rem 0rem;
+}
+
+.featured img {
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* text */
+.genus {
+    font-weight: 900;
+    color: #2f3d2e;
+}
+
+.species {
+    font-weight: 400;
+    color: #444;
+    font-style: italic;
+}
+
+.common-name {
+    color: #d35400;
+    text-transform: capitalize;
+}
+
+#type {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+#description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
