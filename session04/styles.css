@@ -100,6 +100,7 @@ main table th {
 /* table data */
 main table td {
     padding: 0.5rem .5rem;
+    text-align: center;
 }
 
 /* alternate colors even??? */
