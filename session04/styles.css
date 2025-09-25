@@ -115,7 +115,7 @@ main table tr:nth-child(odd) {
 
 .featured img {
     width: 100%;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 15px #0000004d;
 }
 
 /* text */
