@@ -1,0 +1,156 @@
+/* https://www.w3schools.com/css/css3_variables.asp */
+:root {
+    --cream: #eee1e2;
+    --main-red: #9F0911;
+    --green: #229C67;
+}
+
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+body {
+    background-color: #b4deef;
+    font-family: "Pixelify Sans", sans-serif;
+    color: var(--cream);
+}
+
+header,
+nav,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: var(--main-red);
+}
+
+header h1 {
+    margin: 30px 5px 0px 5px;
+}
+
+/*
+main h1 {
+    margin-top: 0;
+} */
+
+nav {
+    background-color: var(--main-red);
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    background-color: var(--cream);
+    width: 9rem;
+    height: 50px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+nav img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+main {
+    background-color: var(--main-red);
+    width: 95%;
+    margin: auto;
+    padding: 10px 0 25px 0px;
+    text-align: center;
+}
+
+.top {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+/* .left {
+    background-color: #229C67;
+    width: 30%;
+    float: left;
+}
+
+.right {
+    background-color: #229C67;
+    width: 30%;
+    float: right;
+} */
+
+.bottom {
+    position: relative;
+}
+
+/* .left {
+    float: left;
+}
+
+.right {
+    clear: both;
+    float: right;
+} */
+
+.dot1 {
+    width: 100px;
+    height: 100px;
+    background-color: #8DA2A4;
+    float: right;
+}
+
+.dot2 {
+    width: 100px;
+    height: 100px;
+    background-color: #8DA2A4;
+    float: left;
+}
+
+.grass1 {
+    background-color: var(--green);
+    width: 30%;
+    
+    float: left;
+    bottom: 0;
+
+}
+
+.grass2 {
+    background-color: var(--green);
+    width: 30%;
+    float: right;
+    bottom: 0;
+}
+
+footer {
+    background-color: #C2B877;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    height: 26vh;
+}
