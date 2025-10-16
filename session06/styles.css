@@ -134,7 +134,6 @@ main {
 .grass1 {
     background-color: var(--green);
     width: 30%;
-    
     float: left;
     bottom: 0;
 
