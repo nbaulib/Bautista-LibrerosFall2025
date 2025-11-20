@@ -38,5 +38,5 @@ dragElement(document.getElementById('accessory9'));
 dragElement(document.getElementById('accessory10'));
 dragElement(document.getElementById('accessory11'));
 dragElement(document.getElementById('accessory12'));
-// dragElement(document.getElementById('accessory13'));
-// dragElement(document.getElementById('accessory14'));
+dragElement(document.getElementById('accessory13'));
+dragElement(document.getElementById('accessory14'));
