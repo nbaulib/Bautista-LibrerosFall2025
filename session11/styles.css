@@ -1,0 +1,50 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	background-color: antiquewhite;
+}
+
+h1 {
+	color: #3a241d;
+	font-size: 50px;
+	text-align: center;
+}
+
+#left-container {
+	left: 0px;
+}
+
+#right-container {
+	right: 0px;
+}
+
+.container {
+	background-color: #ef7373;
+	width: 15%;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+.accessory-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.accessory {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+
+/* hhdhd */
+#head {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 550px;
+	background-color: #f78c56;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
