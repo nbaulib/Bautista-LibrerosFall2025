@@ -59,21 +59,12 @@ function setup() {
   imageMode(CENTER);
   bread.resize(80, 80);
 }
+let breadW = 80;
+let breadH = 80;
 
 function draw() {
   // Use alpha blending for fade effect
   background("#CCFBFE"); /// 0,50
-
-  let breadW = 80;
-  let breadH = 80;
-
-  if (mouseX == centerX & mouseX == centerX) {
-    breadW -= 20;
-    breadH -= 20;
-  }
-  
-  image(bread, mouseX, mouseY);
-  bread.resize(breadW, breadH);
 
   // Draw and move chicken
   drawGrass(20, 380);
@@ -88,6 +79,15 @@ function draw() {
   drawGrass(650, 430);
   drawShape();
   moveShape();
+}
+
+function smallerBread() {
+  if (dist(mouseX, mouseY, centerX, centerY) < 20) {
+    breadW -= 5;
+    breadH -= 5;
+  }
+
+  image(bread, mouseX, mouseY, breadW, breadH);
 }
 
 // base with three strands sticking out
