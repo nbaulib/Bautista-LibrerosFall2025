@@ -28,6 +28,10 @@ let frequency = [];
 // Declare the variable for the curve tightness
 let organicConstant = 1.0;
 
+// bread size
+let breadW = 80;
+let breadH = 80;
+
 function preload() {
   bread = loadImage("bread.png");
 }
@@ -59,8 +63,6 @@ function setup() {
   imageMode(CENTER);
   bread.resize(80, 80);
 }
-let breadW = 80;
-let breadH = 80;
 
 function draw() {
   // Use alpha blending for fade effect
@@ -80,7 +82,7 @@ function draw() {
   drawShape();
   moveShape();
 
-  smallerBread()
+  smallerBread();
 }
 
 function smallerBread() {
@@ -92,7 +94,7 @@ function smallerBread() {
   image(bread, mouseX, mouseY, breadW, breadH);
 
   // reset once 0
-  if (breadW <= 0 || breadH <= 0 ) {
+  if (breadW <= 0 || breadH <= 0) {
     breadH = 80;
     breadW = 80;
   }
