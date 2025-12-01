@@ -79,6 +79,8 @@ function draw() {
   drawGrass(650, 430);
   drawShape();
   moveShape();
+
+  smallerBread()
 }
 
 function smallerBread() {
@@ -88,6 +90,12 @@ function smallerBread() {
   }
 
   image(bread, mouseX, mouseY, breadW, breadH);
+
+  // reset once 0
+  if (breadW <= 0 || breadH <= 0 ) {
+    breadH = 80;
+    breadW = 80;
+  }
 }
 
 // base with three strands sticking out
