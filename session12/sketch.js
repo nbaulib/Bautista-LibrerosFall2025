@@ -65,6 +65,7 @@ function draw() {
   background("#CCFBFE"); /// 0,50
 
   image(bread, mouseX, mouseY);
+  smaller();
 
   // Draw and move chicken
   drawGrass(20, 380);
@@ -80,10 +81,14 @@ function draw() {
   drawShape();
   moveShape();
 }
+let breadW = 80;
+let breadH = 80;
 
-function smaller(x, y) {
+function smaller() {
   if (mouseX == centerX & mouseX == centerX) {
-    bread.resize(x - 20, y - 20);
+    bread.resize(breadW - 20, breadH - 20);
+    breadW =-20;
+    breadH =-20;
   }
 }
 
