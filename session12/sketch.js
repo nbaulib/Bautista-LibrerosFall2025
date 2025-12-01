@@ -1,6 +1,9 @@
 // A remix of: 
 // https://p5js.org/examples/math-and-physics-soft-body/
 
+// and 
+// https://p5js.org/tutorials/animating-with-media-objects/
+
 // Declare variables for the physics calculations
 let centerX = 0.0;
 let centerY = 0.0;
@@ -8,7 +11,7 @@ let radius = 45;
 let rotAngle = -90;
 let accelX = 0.1;
 let accelY = 0.1;
-let deltaX = 0.0;
+let deltaX = 0.1;
 let deltaY = 0.0;
 let springing = 0.0009;
 let damping = 0.99;
@@ -24,6 +27,10 @@ let frequency = [];
 
 // Declare the variable for the curve tightness
 let organicConstant = 1.0;
+
+function preload() {
+  bread = loadImage("bread.png");
+}
 
 function setup() {
   createCanvas(710, 400);
@@ -48,26 +55,36 @@ function setup() {
 
   noStroke();
   angleMode(DEGREES);
+
+  imageMode(CENTER);
+  bread.resize(80, 80);
 }
 
 function draw() {
   // Use alpha blending for fade effect
   background("#CCFBFE"); /// 0,50
 
-  // Draw and move the shape
-  
+  image(bread, mouseX, mouseY);
+
+  // Draw and move chicken
   drawGrass(20, 380);
   drawGrass(210, 410);
   drawGrass(380, 430);
-  
+
   push();
   rotate(-10);
   drawGrass(480, 500);
   pop();
-  
+
   drawGrass(650, 430);
   drawShape();
   moveShape();
+}
+
+function smaller(x, y) {
+  if (mouseX == centerX & mouseX == centerX) {
+    bread.resize(x - 20, y - 20);
+  }
 }
 
 // base with three strands sticking out
