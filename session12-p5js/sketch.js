@@ -37,7 +37,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(710, 400);
+  createCanvas(710, 420);
 
   // Start in the center of the canvas
   centerX = width / 2;
@@ -68,8 +68,10 @@ function draw() {
   // Use alpha blending for fade effect
   background("#CCFBFE"); /// 0,50
 
+  drawSun();
+
   // Draw and move chicken
-  drawGrass(20, 380);
+  drawGrass(20, 390);
   drawGrass(210, 410);
   drawGrass(380, 430);
 
@@ -98,6 +100,14 @@ function smallerBread() {
     breadH = 80;
     breadW = 80;
   }
+}
+
+function drawSun() {
+  fill("#F9DF74");
+  circle(690, 10, 200);
+
+  // 3 rays
+
 }
 
 // base with three strands sticking out
