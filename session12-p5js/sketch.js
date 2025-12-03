@@ -29,11 +29,15 @@ let frequency = [];
 let organicConstant = 1.0;
 
 // bread size
+let chomp;
 let breadW = 80;
 let breadH = 80;
 
 function preload() {
   bread = loadImage("assets/bread.png");
+
+  soundFormats('mp3', 'ogg');
+  chomp = loadSound('/assets/chomp.mp3');
 }
 
 function setup() {
@@ -86,10 +90,23 @@ function draw() {
   smallerBread();
 }
 
+let wasTouching = false;
+
 function smallerBread() {
-  if (dist(mouseX, mouseY, centerX, centerY) < 20) {
+
+  let overlap = dist(mouseX, mouseY, centerX, centerY) < 20
+
+  if (overlap) {
     breadW -= 5;
     breadH -= 5;
+  }
+
+  chomp.setVolume(0.3);
+
+  // only chomps if the last frame was not overlapped
+  // does not replay the sound if you hover too long
+  if (overlap && !wasOver) {
+    chomp.play();
   }
 
   image(bread, mouseX, mouseY, breadW, breadH);
@@ -98,7 +115,9 @@ function smallerBread() {
   if (breadW <= 0 || breadH <= 0) {
     breadH = 80;
     breadW = 80;
+    wasOver = false;
   }
+  wasOver = overlap;
 }
 
 function drawSun() {
