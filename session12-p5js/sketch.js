@@ -33,7 +33,7 @@ let breadW = 80;
 let breadH = 80;
 
 function preload() {
-  bread = loadImage("bread.png");
+  bread = loadImage("assets/bread.png");
 }
 
 function setup() {
@@ -65,8 +65,7 @@ function setup() {
 }
 
 function draw() {
-  // Use alpha blending for fade effect
-  background("#CCFBFE"); /// 0,50
+  background("#CCFBFE");
 
   drawSun();
 
@@ -105,9 +104,6 @@ function smallerBread() {
 function drawSun() {
   fill("#F9DF74");
   circle(690, 10, 200);
-
-  // 3 rays
-
 }
 
 // base with three strands sticking out
@@ -136,13 +132,13 @@ function drawShape() {
 
   curveTightness(organicConstant);
   let shapeColor = lerpColor(
-    color("#ffc100"),
-    color("#EA9010"),
+    color("#ffc100"), //diff colors
+    color("#EA9010"), //diff colors
     organicConstant
   );
   fill(shapeColor);
 
-  // two eyes
+  // two eyes NEW
   circle(nodeX[1], nodeY[1] - 50, 40);
   circle(nodeX[2], nodeY[2] - 50, 40);
 
@@ -154,6 +150,7 @@ function drawShape() {
   endShape(CLOSE);
 }
 
+// same as the example
 function moveShape() {
   // Move center point
   deltaX = mouseX - centerX;
