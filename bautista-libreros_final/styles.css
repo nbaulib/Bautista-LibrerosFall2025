@@ -52,10 +52,37 @@ nav ul li a:hover {
 /* P5.js */
 
 canvas {
-  display: block;
+    display: block;
 }
 
-.content {
-    width: 60%;
+/* PAGE LAYOUTS */
+
+.wrapper-text {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     margin: 0 auto;
+}
+
+.wrapper-text nav {
+    grid-column: 1/13;
+}
+
+.wrapper-text main {
+    /* width: 60%; */
+    margin: 0 auto;
+    grid-column: 5/9;
+}
+
+.wrapper-text .toc {
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.wrapper-text .sources {
+    grid-column: 10/12;
+}
+
+.wrapper-text footer {
+    display: none;
+    grid-column: 4/9;
 }
