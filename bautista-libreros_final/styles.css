@@ -1,0 +1,33 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* background-color: #110703; */
+    /* color: #fcf3ee; */
+    font-family: "Yuji Syuku", serif;
+    letter-spacing: -1.5px;
+    font-size: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Underdog", system-ui;
+}
