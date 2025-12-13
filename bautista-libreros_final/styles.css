@@ -54,3 +54,8 @@ nav ul li a:hover {
 canvas {
   display: block;
 }
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+}
