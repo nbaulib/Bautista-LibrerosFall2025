@@ -1,7 +1,6 @@
 html,
 body {
     height: 100%;
-    overflow: hidden;
 }
 
 /* border-box fix */
@@ -34,6 +33,7 @@ h5 {
 
 /* NAV STYLES */
 nav ul {
+    padding: 0;
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -57,20 +57,26 @@ canvas {
 
 /* PAGE LAYOUTS */
 
+.bruise {
+    background-color: gold;
+}
+
 .wrapper-text {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: auto 1fr auto;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .wrapper-text nav {
-    grid-column: 1/13;
+    grid-column: 5/9;
 }
 
 .wrapper-text main {
-    /* width: 60%; */
     margin: 0 auto;
     grid-column: 5/9;
+    text-align: justify;
 }
 
 .wrapper-text .toc {
@@ -83,6 +89,6 @@ canvas {
 }
 
 .wrapper-text footer {
-    display: none;
     grid-column: 4/9;
+    grid-row:3;
 }
