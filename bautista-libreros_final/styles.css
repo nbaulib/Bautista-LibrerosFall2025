@@ -1,8 +1,3 @@
-html,
-body {
-    height: 100%;
-}
-
 /* border-box fix */
 html {
     box-sizing: border-box;
@@ -17,11 +12,9 @@ html {
 body {
     padding: 0;
     margin: 0;
-    /* background-color: #110703; */
-    /* color: #fcf3ee; */
     font-family: "Yuji Syuku", serif;
     letter-spacing: -1.5px;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 h2,
@@ -55,18 +48,26 @@ canvas {
     display: block;
 }
 
-/* PAGE LAYOUTS */
-
+/* specific */
 .bruise {
-    background-color: gold;
+    background-color: #f5d558;
+    color: #5c3611;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* PAGE LAYOUTS */
+.wrapper-text main img {
+    width: 70%;
 }
 
 .wrapper-text {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: auto 1fr auto;
+    /* grid-template-rows: auto 1fr auto; */
     margin: 0 auto;
-    height: 100vh;
 }
 
 .wrapper-text nav {
@@ -79,9 +80,15 @@ canvas {
     text-align: justify;
 }
 
+.wrapper-text aside {
+    position: sticky;
+    top: 15px;
+    max-height: fit-content;
+    grid-row: 2;
+}
+
 .wrapper-text .toc {
     grid-column: 2/4;
-    grid-row: 2;
 }
 
 .wrapper-text .sources {
@@ -89,6 +96,6 @@ canvas {
 }
 
 .wrapper-text footer {
-    grid-column: 4/9;
-    grid-row:3;
+    grid-column: 5/9;
+    grid-row: 3;
 }
