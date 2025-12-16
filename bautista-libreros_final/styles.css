@@ -51,16 +51,33 @@ canvas {
 /* specific */
 .bruise {
     background-color: #f5d558;
-    color: #5c3611;
+    color: #56310c;
 }
 
 .active {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    border-bottom: solid #56310c;
+}
+
+/* lists */
+
+aside ul {
+    list-style-type: none;
+    /* padding: 5px 0px; */
+}
+
+aside ul li {
+    padding: 5px 0px;
+}
+
+aside ul li::before {
+  content: "✶";
+  margin-right: 8px;
 }
 
 /* PAGE LAYOUTS */
 .wrapper-text main img {
-    width: 70%;
+    width: 100%;
 }
 
 .wrapper-text {
