@@ -22,7 +22,12 @@ h3,
 h4,
 h5 {
     font-family: "Underdog", system-ui;
+    text-align: center;
 }
+ p {
+    text-align: center;
+ }
+
 
 /* NAV STYLES */
 nav ul {
@@ -110,6 +115,7 @@ aside ul li::before {
 
 .wrapper-text .sources {
     grid-column: 10/12;
+    /* display: none; */
 }
 
 .wrapper-text footer {
