@@ -1,6 +1,8 @@
 /* border-box fix */
 html {
     box-sizing: border-box;
+    position: relative;
+     /* overflow: hidden; */
 }
 
 *,
@@ -64,6 +66,18 @@ canvas {
     border-bottom: solid #56310c;
 }
 
+#canvas-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 0;
+    /* pointer-events: none; */
+}
+
 /* lists */
 
 aside ul {
@@ -81,15 +95,18 @@ aside ul li::before {
 }
 
 /* PAGE LAYOUTS */
-.wrapper-text main img {
-    width: 100%;
-}
-
 .wrapper-text {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     /* grid-template-rows: auto 1fr auto; */
     margin: 0 auto;
+    /* for bg canva */
+    position: relative; 
+    z-index: 1;
+}
+
+.wrapper-text main img {
+    width: 100%;
 }
 
 .wrapper-text nav {
