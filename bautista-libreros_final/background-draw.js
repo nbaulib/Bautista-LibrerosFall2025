@@ -15,6 +15,8 @@ const canvas = document.querySelector('#canvas-bg');
 // Context for the canvas for 2 dimensional operations
 const ctx = canvas.getContext('2d');
 
+let count = 1;
+
 // Resizes the canvas to the available size of the window.
 function resize() {
     ctx.canvas.width = window.innerWidth;
@@ -31,12 +33,34 @@ function getPosition(event) {
     };
 }
 
-function drawDots(event) {
+function randomDots(event) {
     const coord = getPosition(event);
 
-    ctx.beginPath();
-    ctx.arc(coord.x, coord.y, 5, 0, Math.PI * 2);
-    // ctx.arc(coord.x+20, coord.y+5, 10, 20, Math.PI * 2);
+    const spreadRadius = 120;
+
+    for (let i = 0; i < count; i++) {
+        // Random offset from click point
+        const offsetX = (Math.random() - 0.5) * spreadRadius * 2;
+        const offsetY = (Math.random() - 0.5) * spreadRadius * 2;
+
+        ctx.beginPath();
+        ctx.arc(
+            coord.x + offsetX,
+            coord.y + offsetY,
+            (Math.random() + 0.2) * 5 * 2, // dot radius
+            0,
+            Math.PI * 2
+        );
+        ctx.fill();
+    }
+
+}
+
+function drawDots(event) {
+    
     ctx.fillStyle = '#56310cac';
-    ctx.fill();
+    randomDots(event);
+    
+    count++;
+    // console.log(count);
 }
