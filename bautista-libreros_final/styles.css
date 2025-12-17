@@ -2,7 +2,7 @@
 html {
     box-sizing: border-box;
     position: relative;
-     /* overflow: hidden; */
+    /* overflow: hidden; */
 }
 
 *,
@@ -26,9 +26,10 @@ h5 {
     font-family: "Underdog", system-ui;
     text-align: center;
 }
- p {
+
+p {
     text-align: center;
- }
+}
 
 
 /* NAV STYLES */
@@ -55,7 +56,7 @@ canvas {
     display: block;
 }
 
-/* specific */
+/* BRUISE */
 .bruise {
     background-color: #f5d558;
     color: #56310c;
@@ -64,6 +65,20 @@ canvas {
 .active {
     /* text-decoration: underline; */
     border-bottom: solid #56310c;
+}
+
+.bruise ul li a {
+    color: #56310c;
+    text-decoration: none;
+}
+
+.bruise ul li a:hover {
+    color: #661d1d
+}
+
+footer a {
+    display: inline-block;
+    /* text-align: center; */
 }
 
 #canvas-bg {
@@ -90,8 +105,8 @@ aside ul li {
 }
 
 aside ul li::before {
-  content: "✶";
-  margin-right: 8px;
+    content: "✶";
+    margin-right: 8px;
 }
 
 /* PAGE LAYOUTS */
@@ -101,7 +116,7 @@ aside ul li::before {
     /* grid-template-rows: auto 1fr auto; */
     margin: 0 auto;
     /* for bg canva */
-    position: relative; 
+    position: relative;
     z-index: 1;
 }
 
