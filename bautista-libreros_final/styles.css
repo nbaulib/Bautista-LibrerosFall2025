@@ -109,11 +109,16 @@ canvas {
     height: 100vh;
 
     z-index: 0;
-    /* pointer-events: none; */
 }
 
 #sketch-holder {
     transform: rotate(90deg);
+    position: fixed;
+    top: -200;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+    z-index: 0; 
 }
 
 
@@ -172,6 +177,16 @@ aside ul li::before {
 .wrapper-text .sources {
     grid-column: 10/12;
     /* display: none; */
+    
+}
+
+.wrapper-text .sources ul {
+    padding: 0;
+}
+
+.wrapper-text .sources ul li a {
+    max-width: 100%;   
+     word-break: break-all;
 }
 
 .wrapper-text .pics {
@@ -228,10 +243,20 @@ footer a:hover {
 }
 
 /* mold */
+.mold {
+    background-color: #1c5303;
+    color: #ecd8c5;
+}
+
 .mold a {
     color: #ecd8c5;
 }
-.mold {
-    background-color: #531803;
-    color: #ecd8c5;
+
+.mold a.active {
+    border-bottom-color: #ecd8c5;
+}
+
+main button {
+    display: block;
+    margin: 0 auto;
 }

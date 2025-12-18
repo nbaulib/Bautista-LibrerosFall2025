@@ -25,15 +25,16 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+  <!-- https://api.jqueryui.com/slide-effect/ -->
   <script>
     $(function () {
-      // hide footer on load
-      $("footer").hide();
+      // hide canvas on load
+      $("#sketch-holder").hide();
 
-      // reveal footer on button press
+      // on button click
       $("#show-main").on("click", function () {
-        $("footer").slideDown(1900);
-        $(this).fadeOut(300);
+        $("#sketch-holder").fadeIn(1900); // fade in canvas
+        $(this).fadeOut(300);             // fade out button
       });
     });
   </script>
@@ -41,6 +42,7 @@
 </head>
 
 <body class="mold">
+  <div id="sketch-holder"></div>
 
   <div class="wrapper-text">
     <nav>
@@ -51,7 +53,43 @@
       </ul>
     </nav>
     <main>
-      <button id="show-main">click me</button>
+      <button id="show-main">click?</button>
+      <section id="banana">
+        <h2>Banana</h2>
+        <img src="assets/old-moldy-bananas.jpeg" />
+        <p>
+          protection you peel <br>
+          inside too soft for the world <br>
+          protection you peel
+        </p>
+      </section>
+      <section id="pear">
+        <h2>Pears</h2>
+        <img src="assets/moldy-pears.jpeg" />
+        <p>
+          like an apple but <br>
+          better cooler and softer <br>
+          like an apple but
+        </p>
+      </section>
+      <section id="apple">
+        <h2>Apple</h2>
+        <img src="assets/moldy-apple.jpeg" />
+        <p>
+          like a pear but much <br>
+          worser midder and harder <br>
+          like a pear but much
+        </p>
+      </section>
+      <section id="lemon">
+        <h2>Lemon</h2>
+        <img src="assets/moldy-lemon.jpeg" />
+        <p>
+          good with salt and more <br>
+          will turn brown and dry out man <br>
+          good with salt and more
+        </p>
+      </section>
     </main>
 
     <aside class="toc">
@@ -76,16 +114,27 @@
 
     <aside class="sources">
       <h2>Sources</h2>
+      <p>for pictures</p>
       <div>
         <ul>
-          <li><a href="https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis" target="_blank">wikipedia.com</a>
+          <li><a
+              href="https://media.istockphoto.com/id/172756531/photo/old-moldy-bananas.jpg?s=612x612&w=0&k=20&c=hJQU65LDO2ULJ0cYR5E68BVBdIP03-L1KGCzC_nevzY="
+              target="_blank">https://media.istockphoto.com</a>
           </li>
+          <li><a
+              href="https://media.istockphoto.com/photos/rotten-and-moldy-pears-picture-id512398816?k=6&m=512398816&s=612x612&w=0&h=9b0oQw0i0RcVRmc-bI-vO_G3Iba_wLz9Jp5xLpjnSp4="
+              target="_blank">https://media.istockphoto.com</a></li>
+          <li><a href="https://thumbs.dreamstime.com/b/rotten-apple-covered-mold-168331458.jpg"
+              target="_blank">https://thumbs.dreamstime.com</a></li>
+          <li><a
+              href="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fa-moldy-lemon-that-looks-like-the-sprite-logo-v0-ckkp4twbc28b1.jpg%3Fauto%3Dwebp%26s%3D2d6cc1eaa6e5200f903b48cb08841241c00ed9bd"
+              target="_blank">https://www.reddit.com/</a></li>
         </ul>
       </div>
     </aside>
 
     <footer>
-      <div id="sketch-holder"></div>
+      <!-- <div id="sketch-holder"></div> -->
       <script src="scripts/sketch.js"></script>
       <p>&copy; 2025 nbaulib</p>
     </footer>
