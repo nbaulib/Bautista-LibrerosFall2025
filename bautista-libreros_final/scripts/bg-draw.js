@@ -57,10 +57,7 @@ function randomDots(event) {
 }
 
 function drawDots(event) {
-    
     ctx.fillStyle = '#56310cac';
     randomDots(event);
-    
     count++;
-    // console.log(count);
 }
