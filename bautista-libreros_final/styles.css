@@ -176,13 +176,11 @@ aside ul li::before {
 
 .wrapper-text .sources {
     grid-column: 10/12;
-    /* display: none; */
     text-align: left;
-    
 }
 
 .wrapper-text .sources ul {
-    padding: 0;
+    padding: 0 10px;
 }
 
 .wrapper-text .sources ul li a {
