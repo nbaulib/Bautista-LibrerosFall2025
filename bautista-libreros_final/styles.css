@@ -56,7 +56,19 @@ canvas {
     display: block;
 }
 
-/* BRUISE */
+/*** BRUISE ***/
+#canvas-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 0;
+    /* pointer-events: none; */
+}
+
 .bruise {
     background-color: #f5d558;
     color: #56310c;
@@ -76,22 +88,19 @@ canvas {
     color: #661d1d
 }
 
-footer a {
-    display: inline-block;
-    /* text-align: center; */
+/*** MOLD ***/
+.mold {
+    background-color: #531803;
+    color: #ecd8c5;
 }
 
-#canvas-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    z-index: 0;
-    /* pointer-events: none; */
+.mold a {
+    color: #ecd8c5;
 }
+
+/* css animation */
+
+
 
 /* lists */
 
@@ -153,4 +162,8 @@ aside ul li::before {
 .wrapper-text footer {
     grid-column: 5/9;
     grid-row: 3;
+}
+
+footer a {
+    display: inline-block;
 }

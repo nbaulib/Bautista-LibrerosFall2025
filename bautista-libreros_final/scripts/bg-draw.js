@@ -53,7 +53,6 @@ function randomDots(event) {
         );
         ctx.fill();
     }
-
 }
 
 function drawDots(event) {

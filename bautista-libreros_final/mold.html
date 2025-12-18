@@ -7,46 +7,78 @@
   <title>Mold: Bad Fruits</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Underdog&family=WDXL+Lubrifont+SC&family=Yuji+Syuku&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+  <!-- P5.js -->
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+
+  <!-- JQuery -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#dialog").dialog();
+    });
+  </script>
 </head>
 
-<body>
+<body class="mold">
 
-  <div class="wrapper">
-
+  <div class="wrapper-text">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="bruise.html">Bruise</a></li>
-        <li><a href="Mold.html">Mold</a></li>
+        <li><a href="Mold.html" class="active">Mold</a></li>
       </ul>
     </nav>
-
-    <header>
+    <!-- <header>
       <h1>the more you scroll the more it molds MAGGOTS FLIES OF FUIR</h1>
-      <p>c</p>
-    </header>
+    </header> -->
     <main>
-      <div id="dialog" title="Basic dialog">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-</div>
+      <!-- <div id="dialog" title="⚠ VIRUS ALERT">
+        <p></p>
+      </div> -->
+      <script src="sketch.js"></script>
     </main>
 
-    <aside>
-      <section>
-        <h2>Sources</h2>
-        <div>
-          <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis" target="_blank">wikipedia.com</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <aside class="toc">
+      <h2>Table of Contents</h2>
+      <div>
+        <ul>
+          <li>
+            <a href="#banana">Banana</a>
+          </li>
+          <li>
+            <a href="#pear">Pear</a>
+          </li>
+          <li>
+            <a href="#apple">Apple</a>
+          </li>
+          <li>
+            <a href="#lemon">Lemon</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <aside class="sources">
+      <h2>Sources</h2>
+      <div>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis" target="_blank">wikipedia.com</a>
+          </li>
+        </ul>
+      </div>
     </aside>
 
     <footer>
@@ -54,16 +86,6 @@
     </footer>
 
   </div>
-
-  <!-- https://jqueryui.com/dialog/ -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-  <script>
-    $(function () {
-      $("#dialog").dialog();
-    });
-  </script>
-
 </body>
 
 </html>
