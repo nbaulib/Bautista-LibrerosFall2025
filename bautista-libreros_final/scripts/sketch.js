@@ -2,12 +2,16 @@ maggotAmount = 20;
 xArray = [];
 yArray = [];
 
+// https://stackoverflow.com/questions/78083190/rendering-p5-js-sketch-on-my-jekyll-website
 function setup() {
-  createCanvas(400, 400);
+  const canvasWidth = 400;
+  const canvasHeight = 800;
+  const canvas = createCanvas(canvasWidth, canvasHeight);
+  canvas.parent("sketch-holder");
 
   for (let i = 0; i < maggotAmount; i++) {
-    xArray[i] = random(0, 400);
-    yArray[i] = random(0, 400);
+    xArray[i] = random(0, canvasWidth);
+    yArray[i] = random(0, canvasHeight);
   }
 
 }
@@ -17,7 +21,7 @@ function draw() {
 
   for (let i = 0; i < maggotAmount; i++) {
     // move maggots
-    yArray[i] = yArray[i] + 0.3;
+    yArray[i] = yArray[i] - 0.3;
 
     if (yArray[i] > height + 40) {
       yArray[i] = -40;

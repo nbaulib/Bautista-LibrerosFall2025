@@ -98,6 +98,10 @@ canvas {
     color: #ecd8c5;
 }
 
+#sketch-holder {
+    transform: rotate(90deg);
+}
+
 /* css animation */
 
 

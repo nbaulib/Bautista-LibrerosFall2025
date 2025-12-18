@@ -24,11 +24,20 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <script>
     $(function () {
-      $("#dialog").dialog();
+      // hide footer on load
+      $("footer").hide();
+
+      // reveal footer on button press
+      $("#show-main").on("click", function () {
+        $("footer").slideDown(1900);
+        $(this).fadeOut(300);
+      });
     });
   </script>
+
 </head>
 
 <body class="mold">
@@ -41,15 +50,8 @@
         <li><a href="Mold.html" class="active">Mold</a></li>
       </ul>
     </nav>
-    <!-- <header>
-      <h1>the more you scroll the more it molds MAGGOTS FLIES OF FUIR</h1>
-    </header> -->
     <main>
-      <!-- <div id="dialog" title="⚠ VIRUS ALERT">
-        <p></p>
-      </div> -->
-      <!-- slide the skethc in bcs why not -->
-      <script src="scripts/sketch.js"></script>
+      <button id="show-main">click me</button>
     </main>
 
     <aside class="toc">
@@ -83,6 +85,8 @@
     </aside>
 
     <footer>
+      <div id="sketch-holder"></div>
+      <script src="scripts/sketch.js"></script>
       <p>&copy; 2025 nbaulib</p>
     </footer>
 
