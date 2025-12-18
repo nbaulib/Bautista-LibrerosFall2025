@@ -33,6 +33,7 @@ function getPosition(event) {
     };
 }
 
+// https://www.w3schools.com/graphics/canvas_circles.asp
 function randomDots(event) {
     const coord = getPosition(event);
 
