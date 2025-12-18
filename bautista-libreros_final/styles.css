@@ -259,6 +259,9 @@ aside ul li::before {
 .mold a.active {
     border-bottom-color: #ecd8c5;
 }
+.mold a:hover {
+    color: #ecd8c5;
+}
 
 main button {
     display: block;
